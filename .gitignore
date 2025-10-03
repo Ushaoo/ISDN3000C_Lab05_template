@@ -1,0 +1,4 @@
+venv/ 
+
+plant_sensors.csv
+__pycache__/
