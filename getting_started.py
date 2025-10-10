@@ -21,8 +21,9 @@ sensors = {
 num_records = len(time_range) * len(sensors)
 data = []
 
-for sensor_id, props in sensors.items():
+for id, props in sensors.items():
     for ts in time_range:
+        sensor_id = id
         # Simulate temperature and light
         hour_of_day = ts.hour
         base_temp = 20 + 5 * np.sin(np.pi * (hour_of_day-8)/12) # Temperature is highest in the afternoon
