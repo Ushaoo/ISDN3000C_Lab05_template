@@ -3,7 +3,6 @@ import pandas as pd
 
 # --- TODO: Complete the tasks listed in tutorial. Run and verify your results before submission. --- #
 def part1_exercises():
-    # Load the dataset
     print("Loading dataset...")
     df = pd.read_csv('plant_sensors.csv')
     moisture_readings = df['soil_moisture'].to_numpy()
